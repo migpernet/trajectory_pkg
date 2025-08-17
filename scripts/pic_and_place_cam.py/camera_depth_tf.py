@@ -91,7 +91,7 @@ class ImageProcessor:
             return
 
         # --- Processamento da Imagem ---
-        # Reduzindo a imagem para 640x480 (opcional, mas pode ajudar na performance)
+        # Reduzindo a imagem (pode ajudar na performance)
         cv_image = cv2.resize(self.cv_image, (440, 280))
 
         # Aplicando um filtro Gaussiano para suavizar a imagem

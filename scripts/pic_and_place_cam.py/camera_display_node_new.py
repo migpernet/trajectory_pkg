@@ -135,7 +135,7 @@ class ImageProcessor:
 
                     # Desenhe o contorno e o centróide na imagem original
                     cv2.drawContours(detected_objects_image, [contour], -1, (0, 255, 0), 2) # Verde
-                    cv2.circle(detected_objects_image, (cx, cy), 5, (0, 0, 255), -1) # Centróide em vermelho
+                    cv2.circle(detected_objects_image, (cx, cy), 5, (0, 0, 0), -1) # Centróide em vermelho
                     cv2.putText(detected_objects_image, f"({cx}, {cy})", (cx + 10, cy + 10),
                                 cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255, 255, 255), 2) # Coordenadas em branco
 
